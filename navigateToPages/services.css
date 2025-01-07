@@ -23,7 +23,9 @@
     flex-direction: column; 
     position: relative;
 }
-
+.dark-theme .chatbox .chat.incoming  {
+        background-color: #555;
+    }
 .card-content {
     padding: 20px;
     text-align: center;
