@@ -161,7 +161,7 @@ html,body{
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    background-color: #0f0c29;
+    background-color: #3498db;
     border-radius: 30px;
     color: rgb(255, 255, 255);
     font-weight: 600;
@@ -216,7 +216,7 @@ html,body{
     padding: 0.8em 1.3em 0.8em 0.9em;
     color: white;
     background: #ad5389;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(to right, #3498db, #bccefb);
     border: none;
     letter-spacing: 0.05em;
     border-radius: 16px;
