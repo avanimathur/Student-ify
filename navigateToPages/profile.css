@@ -1,13 +1,12 @@
 .logged{
     height: 600px;
     padding: 15rem;
-    background-image: url('../img/back.jpg');
 }
 
 .logged p{
     text-align: center;
     text-decoration: underline;
-    color: azure;
+    color: black;
     font-size: large ;
 }
 .sign-up , .log-in{
