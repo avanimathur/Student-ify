@@ -11,16 +11,7 @@
 html,body{
     overflow-x: hidden;
 }
-:root{
-  --tw-gradient-from: #4caf50;
---tw-gradient-to: #ffc107 ;
---tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
---tw-gradient-from: #4caf50;
---tw-gradient-to: #ffc107 ;
---tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
 
-/* background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); */
 
 .content{
   background-image: url('img/New Background.jpeg');
@@ -140,7 +131,7 @@ html,body{
     border-radius: 8px;
     outline: none;
     background-color:whitesmoke;
-    /* color: white; */
+    color: white;
     transition: .3s ease;
    }
    
@@ -854,126 +845,79 @@ footer {
 }
 
 /* Dark Theme Styles */
-.theme-dark {
+.dark-theme {
     background-color: #121212;
     color: #eee;
 }
 
 
-/* .theme-dark .header {
+/* .dark-theme .header {
     background-color: #222;
 } */
 
-.theme-dark .search-bar input {
+.dark-theme .search-bar input {
     background-color: #555;
     color: #eee;
     border: 1px solid #777;
 }
 
-.theme-dark .search-bar button {
+.dark-theme .search-bar button {
     background-color: #666;
     color: #eee;
 }
 
-.theme-dark .navbar a {
+.dark-theme .navbar a {
     color: #eee;
 }
 
-.theme-dark .cta-button, .theme-dark .Authenticate button {
+.dark-theme .cta-button, .dark-theme .Authenticate button {
   
-    color: #000;
-    background:  #4caf50;
+    color: #eee;
+    background: linear-gradient(135deg, #870000, #190a05);
 }
 
 
-.theme-dark .footer {
+.dark-theme .footer {
     background-color: #222;
     color: #ddd;
 }
 
-.theme-dark .footer .icons a {
+.dark-theme .footer .icons a {
     color: #ddd;
 }
 
-.theme-dark .chatbot-toggler {
-    background-color:#4caf50 ;
+.dark-theme .chatbot-toggler {
+    background-color: #555;
     color: #eee;
 }
 
-.theme-dark .chatbot {
-    background-color: #4caf50;
+.dark-theme .chatbot {
+    background-color: #444;
     color: #eee;
 }
 
-.theme-dark .chatbox .chat.incoming {
-    background-color: #4caf50;
+.dark-theme .chatbox .chat.incoming {
+    background-color: #555;
 }
 
-.theme-dark .card {
-    background-color: rgb(55 65 81/1);
-    color: #ffc107 ;
-    box-shadow: 0px 4px 6px rgba(254, 255, 239, 0.61);
+.dark-theme .card {
+    background-color: #444;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2); /* White shadow */
 }
 
-.theme-dark .card h3,
-.theme-dark .card h2 {
+.dark-theme .card h3,
+.dark-theme .card h2 {
     
         color: #000;
     }
-.theme-dark header {
+.dark-theme .header {
+    overflow: hidden;
+    width: 100%;
+    height: 5rem;
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
     
-    background: black;
-}
-
-.theme-dark .content{
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.theme-dark .content div{
-  background:  rgb(55 65 81/1);
-}
-.theme-dark p{
-  color: white;
-}
-.theme-dark .input{
-  color:black;
-}
-.theme-dark 
-.button-explore{
-  background: #ffc107 ;
-}
-.theme-dark .footer-content{
-  background: #000;
-  color:white;
-}
-
-.theme-dark .navbar-list li a:hover{
-  color:#2ecc71;
-}
-
-
-.social-heading {
-  font-size: 18px;
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
-}
-
-.social-heading:hover {
-  color: #e67e22;
-}
-
-.social-link {
-  color: black;
-  text-decoration: none;
-  font-size: 24px;
-  transition: all 0.3s ease;
-}
-
-.social-link:hover {
-  color: blue;
-  transform: scale(1.2);
-}
-
-.social-icons li {
-  display: inline-block;
+    background: linear-gradient(135deg, #e43a15, #e65245);
 }

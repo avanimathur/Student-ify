@@ -12,3 +12,6 @@
 .sign-up , .log-in{
     text-align: center;
 }
+.theme-dark .logged {
+    background: linear-gradient(to right ,#4caf50,#ffc107);
+}

@@ -43,6 +43,12 @@
         #scrollToTopBtn:hover {
             background-color: rgb(80, 183, 218);
         }
+        .theme-dark  #scrollToTopBtn{
+        background-color:  #ffc107;
+      }
+      .theme-dark #scrollToTopBtn:hover{
+        background-color: #4caf50 ;
+      }
   </style>
 </head>
 
@@ -73,6 +79,8 @@
             <li><a href="../navigateToPages/profile.html">STUDENT Profile</a></li>
             <li><a href="../navigateToPages/contact.html">CALENDAR</a></li>
             <li><a href="../navigateToPages/faq2.html">FAQ</a></li>
+            <li><a href="./Contributors/contributor.html">CONTRIBUTORS</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
           </ul>
         </nav>
         <div class="right">
@@ -93,13 +101,13 @@
   
           <div class="Authenticate">
             <button class="sign-up">
-              <span>Sign Up</span>
+              <span><a href="../sign_up.html" style="color:white;">Sign Up</a></span>
             </button>
   
-            <button class="log-in"><span>Log In</span></button>
+            <button class="log-in"><span><a href="../Login-page/login-pg.html" style="color:white;">Log In</a></span></button>
           </div>
           <label class="theme-switch">
-            <input type="checkbox" class="theme-switch__checkbox">
+            <input type="checkbox" class="theme-switch__checkbox"  id="themeToggle" onchange="toggleTheme()">
             <div class="theme-switch__container">
               <div class="theme-switch__clouds"></div>
               <div class="theme-switch__stars-container">
@@ -149,7 +157,8 @@
       
   <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: white; color: black;">
     <div class="footer-section about" style="flex: 2; min-width: 300px; display: flex; align-items:flex-start; margin: 10px; transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-      <img src="img\logo.jpg" alt="Studentify" style="width: 100px; margin-right: 20px;">
+
+      <img src="logo.jpg" alt="Studentify" style="width: 100px; margin-right: 20px;">
       <p style="margin: 0; color: black;">Welcome to STUDENTIFY, your go-to platform for unlocking academic potential and broadening horizons. We empower students with tailored resources, expert-led courses, and a dynamic learning environment to foster growth, curiosity, and critical thinking for success.</p>
 
     </div>
@@ -161,7 +170,7 @@
         <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Blog</a></li>
         <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Work With Us</a></li>
         <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Investor Relations</a></li>
-        <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Contact Us</a></li>
+        <li><a href="../contactus.html" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Contact Us</a></li>
       </ul>
     </div>
 
@@ -172,17 +181,22 @@
         <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Privacy Policy</a></li>
         <li><a href="security.html" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Security</a></li>
         <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Terms of Service</a></li>
+
+        <li><a href="../privacy.html" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Privacy Policy</a></li>
+        <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Security</a></li>
+        <li><a href="../termsofservice.html" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Terms of Service</a></li>
+
       </ul>
     </div>
 
     <div class="footer-section social-links" style="flex: 1; min-width: 150px; margin: 10px;">
       <h2 style="font-size: 18px; margin-bottom: 10px; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">Follow Us</h2>
       <ul class="social-icons" style="list-style: none; padding: 0; display: flex; gap: 10px;">
-        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e4405f'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#3b5998'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#0077b5'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#1da1f2'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#ff0000'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-youtube"></i></a></li>
       </ul>
     </div>
   </div>
@@ -192,7 +206,7 @@
   </div>
 
   <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
-  
+
 </footer>
 
     <button class="chatbot-toggler">
@@ -255,6 +269,38 @@
           document.documentElement.scrollTop = 0;
       };
     </script>
+
+
+  <!-- Dark  mode theme -->
+  <script>
+    // Function to set the theme
+  function setTheme(themeName) {
+      document.body.className = themeName;
+      localStorage.setItem('theme', themeName);
+  }
+  
+  // Function to toggle the theme
+  function toggleTheme() {
+      if (document.body.classList.contains('theme-light')) {
+          setTheme('theme-dark');
+      } else {
+          setTheme('theme-light');
+      }
+  }
+  
+  // Immediately invoked function to set the theme on initial load
+  (function () {
+      const savedTheme = localStorage.getItem('theme') || 'theme-light';
+      setTheme(savedTheme);
+  
+      // Set the checkbox state based on the saved theme
+      const themeToggleCheckbox = document.querySelector('.theme-switch__checkbox');
+      themeToggleCheckbox.checked = savedTheme === 'theme-dark';
+  })();
+  
+     
+  </script>
+
   </body>
 
 </html>
