@@ -39,7 +39,7 @@ html,body{
 }
 
 .logo {
-    
+  margin-right: 2rem;
     width: 80px; 
     height: auto; 
 }
@@ -100,26 +100,27 @@ html,body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:0 20px;
+  padding:0px 10px;
   background: linear-gradient(45deg, #3498db, #2ecc71);
   }
   
   .left{
     display: flex;
-    gap: 20px;
+    gap: 10px;
   }
   
   .right{
     display: flex;
-    gap: 12px;
+    gap: 10px;
   }
   
   .group {
+    margin-left: 2rem;
     display: flex;
     line-height: 28px;
     align-items: center;
     position: relative;
-    max-width: 190px;
+    max-width: 200px;
    }
    
    .input {
@@ -476,12 +477,15 @@ p{
 
 .navbar{
     
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 .navbar-list{
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    gap: 4rem;
+    gap: 2rem;
+    font-size: small;
 }
 li a,a:visited{
     text-decoration: none;
@@ -541,6 +545,7 @@ li a,a:visited{
 .search-bar {
     display: flex;
     align-items: center;
+    
 }
 
 .search-input:hover{
@@ -571,6 +576,7 @@ li a,a:visited{
     background-color: lightgrey;
     border-radius: 20px;
     padding: 8px;
+    font: 300;
     border-color: lightyellow;
 }
 
@@ -656,12 +662,14 @@ li a,a:visited{
         opacity: 0;
         visibility: hidden;
     }
+
     .navbar-list{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         display: flex;
     }
+
     li a,a:visited{
         font-size: 1.2rem;
     }
