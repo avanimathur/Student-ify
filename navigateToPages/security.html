@@ -16,27 +16,143 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-    /* Scroll to Top Button */
-      #scrollToTopBtn {
-          display: none;
-          position: fixed;
-          bottom: 85px;
-          right: 40px;
-          height: 50px;
-          width: 50px;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        #scrollToTopBtn:hover {
           background-color: rgb(80, 183, 218);
-          color: white;
-          border: none;
-          border-radius: 50%;
-          padding: 10px;
-          cursor: pointer;
-          font-size: 15px;
       }
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./img/New Background.jpeg');  /* Added background image */
+    background-size: cover;  /* Ensures the image covers the entire body */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Ensures the image doesn’t repeat */
+    background-attachment: fixed;  /* Keeps the image fixed during scrolling */
+    color: #333;
+}
 
-      #scrollToTopBtn:hover {
-          background-color: rgb(80, 183, 218);
-      }
+         /* Style for the container */
+      .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);  /* Slightly transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading Styles */
+.container h1, .container h3 {
+    color: #333;
+    font-family: 'Georgia', serif;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Style for smaller subheadings */
+.container h1 {
+    font-size: 1.8em;
+    color: #1a73e8;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 5px;
+}
+
+.container h3 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #444;
+}
+
+/* Paragraph Styles */
+.container p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* List Styles */
+.container ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+/* Link Style */
+.container a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+.container section {
+    margin-bottom: 30px;
+}
+
+/* Hover effect on sections */
+.container section:hover {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Button Styling (if needed in future) */
+button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #155ab7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .container h1, .container h3 {
+        font-size: 1.3em;
+    }
+
+    .container p {
+        font-size: 0.95em;
+    }
+    
+    .container ul {
+        margin-left: 20px;
+    }
+}
+
 </style>
 </head>
 
@@ -46,7 +162,7 @@
         <nav class="navbar">
           <div class="left">
             <a href="../index.html">
-              <img src="./img/logo.jpg" alt="Logo" class="logo" />
+              <img src="logo.jpg" alt="Logo" class="logo" />
             </a>
   
             <div class="group">
@@ -114,37 +230,45 @@
         </div>
       </header>
 
-    <div class="content">
-        <br>
-        <img src="./img/logo.jpg" alt="" class="Hi">
-        <div id="content">
-          <p id="message" class="message">Hi! </p>
-          <br>
-            <p id="content">Dear Student,</p>
-            <br>
-            <p>College is an exciting chapter filled with opportunities for growth, learning, and self-discovery. As you navigate this journey, I encourage you to embrace every experience with an open mind and a courageous spirit.</p>
-            <br>
-            <p>Amidst the challenges of coursework, exams, and deadlines, remember to prioritize your well-being. Take breaks when needed, seek support from friends and mentors, and cultivate healthy habits that nourish your mind, body, and soul.</p>
-            <br>
-            <p>It's natural to encounter obstacles along the way, but don't let setbacks deter you from pursuing your dreams. Use them as opportunities to learn, adapt, and grow stronger. Your resilience and determination will propel you forward, even in the face of adversity.</p>
-            <br>
-            <p>College is not just about academics; it's also about exploration and discovery. Take advantage of extracurricular activities, internships, and study abroad programs to broaden your horizons and discover new passions.</p>
-            <br>
-            <p>But amidst all the excitement, remember to stay true to yourself. Define your own path and pursue what truly inspires you. Your college experience is a journey of self-discovery, so don't be afraid to explore different paths and embrace your unique identity.</p>
-            <br>
-            <p>Above all, cherish the friendships and memories you create along the way. College is a time to forge lifelong connections and create unforgettable moments that will shape your future.</p>
-            <br>
-            <p>As you embark on this adventure, know that you have the potential to achieve greatness. Believe in yourself, stay focused on your goals, and never underestimate the power of your dreams.</p>
+   
+        <div class="container">
+            <h3>Security at STUDENT-IFY</h3>
+            <p>At Studentify, we prioritize the safety and security of our users' data and our platform. Our goal is to create a secure, trustworthy, and reliable environment where students can access academic resources and explore educational opportunities with confidence.</p>
+    
+            <h2>Our Security Practices</h2>
+            <ul>
+                <li><strong>Data Encryption:</strong> All sensitive data, including personal and academic information, is encrypted using industry-standard encryption protocols.</li>
+                <li><strong>Secure Authentication:</strong> We implement secure login mechanisms, including password hashing, multi-factor authentication (MFA), and regular session monitoring.</li>
+                <li><strong>Regular Audits:</strong> Our platform undergoes regular security audits and penetration testing to identify and mitigate vulnerabilities.</li>
+                <li><strong>Compliance:</strong> We adhere to global data protection standards such as GDPR and CCPA to ensure user privacy and data security.</li>
+            </ul>
+    
+            <h2>How We Protect You</h2>
+            <p>We use the latest technology to safeguard your data and ensure platform integrity:</p>
+            <ul>
+                <li><strong>Firewall Protection:</strong> Our servers are protected by robust firewalls to prevent unauthorized access.</li>
+                <li><strong>Regular Backups:</strong> Daily backups of user data ensure quick recovery in case of any data loss incidents.</li>
+                <li><strong>Anti-Malware Systems:</strong> Real-time monitoring and malware detection systems help prevent attacks.</li>
+            </ul>
+    
+            <h2>Your Role in Security</h2>
+            <p>While we implement strong security measures, your role in maintaining security is equally important. We recommend:</p>
+            <ul>
+                <li>Using strong, unique passwords and updating them regularly.</li>
+                <li>Enabling multi-factor authentication (MFA) for added protection.</li>
+                <li>Avoiding sharing your login credentials with others.</li>
+                <li>Reporting suspicious activities or security concerns to us immediately.</li>
+            </ul>
+    
+            <h2>Contact Us</h2>
+            <p>If you have questions about our security practices or need to report a security issue, please contact us at <a href="mailto:security@studentify.com">security@studentify.com</a>.</p>
         </div>
-        
-        <br>
-    </div>
 
     <footer>
       
       <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: white; color: black;">
         <div class="footer-section about" style="flex: 2; min-width: 300px; display: flex; align-items:flex-start; margin: 10px; transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-          <img src="img\logo.jpg" alt="Studentify" style="width: 100px; margin-right: 20px;">
+          <img src="logo.jpg" alt="Studentify" style="width: 100px; margin-right: 20px;">
           <p style="margin: 0; color: black;">Welcome to STUDENTIFY, your go-to platform for unlocking academic potential and broadening horizons. We empower students with tailored resources, expert-led courses, and a dynamic learning environment to foster growth, curiosity, and critical thinking for success.</p>
 
         </div>
