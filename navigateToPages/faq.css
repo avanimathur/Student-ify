@@ -8,13 +8,27 @@ header{
   /* padding: 2rem 4rem; */
  }
 
-
-
+.theme-dark .content{
+  background-image: linear-gradient(to right, #4caf50,#ffc107);
+}
+.theme-dark .cta-button, .theme-dark .Authenticate button {
+  
+  color: #000;
+  background:  #4caf50;
+}
+.theme-dark header{
+  background: #000;
+}
+.theme-dark .button-explore{
+  background-color: #ffc107;
+}
  .faqcont{
   background-color: #000;
   /* padding: 10px; */
  }
-
+.theme-dark .faqcont{
+  background-color:rgb(55 65 81/1); ;
+}
  .faq-qa-ans{
   padding-bottom: 10px;
  }

@@ -30,3 +30,8 @@ To experience Student-ify on your local machine, follow these steps:
 ## 🤝 **Contributing**
 
 We welcome all contributions that can help make  Student-ify even better! Fork this repository, make your improvements, and submit a pull request.
+
+## ❤️ **Our Contributors**
+<a href="https://github.com/avanimathur/Student-ify/graphs/contributors">
+<img src="https://contributors-img.web.app/image?repo=avanimathur/Student-ify"/>
+

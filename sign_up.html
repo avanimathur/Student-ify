@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sign_up.css">
     <title>Sign up|Studentify</title>
+
 </head>
 <body>
-    <form action="action_page.php" style="border: 1px solid #ccc">
+    <form id="signupForm" action="http://localhost:3000/signup" method="post" style="border: 1px solid #ccc">
         <div class="container">
-            <h1 align="center">Sign Up</h1>
-            <p align="center">Please fill in this form to create an account.</p>
+            <h1 style="display: flex; justify-content:center;">Sign Up</h1>
+            <p style="display: flex; justify-content:center;">Please fill in this form to create an account.</p>
             <hr />
 
+            <!-- Error msg display -->
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required />
+            <input type="text" placeholder="Enter Email" name="email" id="email" required />
+            <span id="emailError" class="error-message"></span><br><br>
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required />
+            <input type="password" placeholder="Enter Password" name="password" id="password" required />
+            <span id="passwordError" class="error-message"></span><br><br>
 
             <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+            <input type="password" placeholder="Repeat Password" name="repeatPassword" id="repeatPassword" required />
+            <span id="repeatPasswordError" class="error-message"></span><br><br>
+
+
 
             <label>
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px" />
@@ -38,5 +45,9 @@
             </div>
         </div>
     </form>
+
+    
+    <script src="./sign_up.js" defer></script>
+    
 </body>
 </html>

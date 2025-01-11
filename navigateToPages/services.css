@@ -133,3 +133,7 @@ h3:hover{
     justify-content: center;
     align-items: center;
 }
+
+.theme-dark .card-container {
+    background: rgba(33 33 33 /1);
+}
