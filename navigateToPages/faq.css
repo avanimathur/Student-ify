@@ -40,19 +40,6 @@ header{
   padding: 3px;
 }
 
-.navbar-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
-.navbar-list li {
-  display: inline-block; 
-  color: white;
-
-}
-
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   .header {
@@ -66,32 +53,38 @@ header{
 
 
 /*-----navbar------*/
-    .navbar{
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        ;
-    }
-    .navbar-list{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-  ;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
 }
 
-.navbar-list li a{
-    display: inline-block; 
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1; 
 }
-.navbar-list li a:hover{
-  transform: scale(1.2); /* Adjust the scale value as needed */
-  transition: transform 0.3s ease; /* Smooth zoom-in effect */
-  color: black;
+
+.navbar-list li {
+  flex: 1; 
+  text-align: center; 
+}
+
+.navbar-list li a {
+  font-size: 18px; 
   text-decoration: none;
+  color: white; 
+  padding: 10px 0;
+}
+
+.navbar-list li a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  color: black;
 }
 
 header{
