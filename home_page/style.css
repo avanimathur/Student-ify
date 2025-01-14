@@ -1,0 +1,154 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+#main_image {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#navbar {
+  background-color: #1f1f1f; /* Darker navbar background */
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#nav-links {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+
+#nav-links a {
+  text-decoration: none; /* Remove the underline */
+  color: #e0e0e0; /* Set the text color to a light color (change this if needed) */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+#nav-links a:hover {
+  color: #1a73e8; /* Change color on hover (you can customize this color) */
+}
+
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#courses {
+  cursor: pointer;
+  background-color: #1a73e8; /* A blue color to match the dark theme */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#courses:hover {
+  background-color: #1558b0; /* A darker blue for the hover effect */
+}
+
+#login {
+  cursor: pointer;
+  background-color: #34a853; /* Darker green */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#login:hover {
+  background-color: #2c8c47; /* Darker hover green */
+}
+
+#lightmode {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#heading {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+  color: #e0e0e0; /* Light text color */
+}
+#sub_heading {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+  color: #e0e0e0; /* Light text color */
+}
+
+/* Cards Section */
+#cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increased spacing between cards */
+  margin: 50px 20px;
+}
+
+.card {
+  cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    #1a73e8,
+    #34a853
+  ); /* Gradient color for the card */
+  color: white;
+  border-radius: 15px; /* More rounded corners */
+  padding: 30px;
+  width: 350px; /* Increased card size */
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer Section */
+#footer {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: fixed; /* Keeps the footer at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Stretches footer across the width */
+}
+
+#footer a {
+  color: #1a73e8;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}

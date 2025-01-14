@@ -1,0 +1,96 @@
+/* General Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Profile Container */
+#profile-container {
+    width: 90%;
+    max-width: 600px; /* Reduced the size of the container */
+    background: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Profile Header */
+#profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#profile-pic {
+    width: 120px; /* Smaller profile picture */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #1e90ff;
+}
+
+.student-info {
+    font-size: 12px;
+    color: #d0d0d0;
+}
+
+/* Section Styles */
+#about, #skills, #academic, #projects {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1e90ff;
+}
+
+p, ul {
+    font-size: 12px;
+    color: #d0d0d0;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    color: #1e90ff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-top: 20px;
+}
