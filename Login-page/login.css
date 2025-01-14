@@ -9,139 +9,82 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow-y: auto;
+}
+
+/* Login Container */
+#login-container {
+    width: 100%;
+    max-width: 400px; /* Reduced width */
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
     overflow: hidden;
 }
 
-/* Login Form Container */
-#login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-/* Refined Login Box */
-#login-form {
-    background: linear-gradient(145deg, #1f1f1f, #333); /* Subtle gradient for depth */
-    padding: 40px 50px;
-    border-radius: 16px;
-    width: 100%;
-    max-width: 450px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4), inset 0 4px 10px rgba(0, 0, 0, 0.3); /* Outer and inner shadow for a floating effect */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Heading */
+h1 {
+    color: #e0e0e0;
     text-align: center;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Hover Effect for the Form */
-#login-form:hover {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), inset 0 6px 15px rgba(0, 0, 0, 0.35);
-}
-
-/* Form Header */
-h2 {
-    color: #e0e0e0;
-    font-size: 36px;
-    margin-bottom: 12px;
-    font-weight: bold;
-}
-
-/* Subtitle */
-#login-subtitle {
-    color: #b0b0b0;
-    font-size: 16px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
-/* Align Username Label and Input in Same Row */
-.form-field-username {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%; /* Ensure input fields take full width */
+/* Login Form Section */
+.login-form {
+    margin-top: 20px;
 }
 
-.form-field-username label {
-    color: #b0b0b0;
-    font-size: 14px;
-    margin-right: 12px; /* Spacing between label and input */
+.login-form h2 {
+    color: #1a73e8;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
-.form-field-username input {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #444;
-    border-radius: 10px;
-    background-color: #333;
-    color: #e0e0e0;
-    font-size: 16px;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+.form-group {
+    margin-bottom: 15px; /* Reduced space between fields */
 }
 
-.form-field-username input:focus {
-    border-color: #1a73e8; /* Focus effect with blue border */
-    outline: none;
-    background-color: #444; /* Slightly lighter background on focus */
-}
-
-/* Other Form Fields */
-.form-field {
-    margin-bottom: 20px;
-    width: 100%; /* Ensure input fields take full width */
-}
-
-.form-field label {
-    display: block;
+.form-group label {
     color: #b0b0b0;
     font-size: 14px;
     margin-bottom: 6px;
+    display: block;
 }
 
-.form-field input {
+.form-group input {
     width: 100%;
-    padding: 14px;
-    border: 1px solid #444;
-    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #333;
+    border-radius: 8px;
     background-color: #333;
     color: #e0e0e0;
-    font-size: 16px;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+    font-size: 14px;
 }
 
-.form-field input:focus {
-    border-color: #1a73e8; /* Focus effect with blue border */
-    outline: none;
-    background-color: #444; /* Slightly lighter background on focus */
-}
-
-/* Submit Button */
-#login-button {
+button {
     width: 100%;
-    margin-left: 12px;
-    padding: 14px;
-    background-color: #34a853; /* Green color for login button */
-    border-radius: 10px;
+    padding: 10px;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 8px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#login-button:hover {
-    background-color: #2c8c47;
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+button:hover {
+    background-color: #ff9800; /* Hover effect */
 }
 
 /* Signup Link */
 #signup-link {
+    text-align: center;
+    margin-top: 15px;
     color: #b0b0b0;
     font-size: 14px;
-    margin-top: 12px;
-    margin-left: 20px;
 }
 
 #signup-link a {
@@ -151,4 +94,32 @@ h2 {
 
 #signup-link a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #login-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .login-form h2 {
+        font-size: 18px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }

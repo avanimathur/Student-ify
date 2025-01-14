@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Studentify</title>
+    <title>Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-
-    <!-- Login Form -->
     <div id="login-container">
-        <div id="login-form">
-            <h2>Welcome Back!</h2>
-            <p id="login-subtitle">Please log in to continue</p>
-            <form action="#" method="post">
-                <div class="form-field">
+        <h1>Login</h1>
+        
+        <div class="login-form">
+            <h2>Welcome Back</h2>
+            
+            <!-- Login Form -->
+            <form action="#">
+                <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <input type="text" id="username" name="username" required>
                 </div>
-                <div class="form-field">
+
+                <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit" id="login-button">Login</button>
-                <p id="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+                <button type="submit">Login</button>
             </form>
+
+            <p id="signup-link">Don't have an account? <a href="../Signup-page/signup.html">Sign Up</a></p>
         </div>
     </div>
-
 </body>
 </html>
