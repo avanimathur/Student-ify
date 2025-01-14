@@ -67,6 +67,26 @@ html,body{
     color: white;
   }
   
+  /* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
   /* Dark Mode */
   @media (prefers-color-scheme: dark) {
     .header {
@@ -103,6 +123,24 @@ html,body{
     color: black;
     text-decoration: none;
   }
+
+ /* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
   
   header{
   display: flex;
@@ -218,17 +256,20 @@ html,body{
   .sign-up,.log-in {
     display: flex;
     align-items: center;
+    justify-content: center; 
     font-family: inherit;
     cursor: pointer;
     font-weight: 500;
     font-size: 17px;
-    padding: 0.8em 1.3em 0.8em 0.9em;
+    padding: 0.8em 1.2em;
     color: white;
-    background: #ad5389;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     border: none;
     letter-spacing: 0.05em;
     border-radius: 16px;
+    width: 90px;
+    height: 35px;
+    text-align: center;
   }
   
   
@@ -976,4 +1017,78 @@ footer {
 
 .social-icons li {
   display: inline-block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 10;
+    padding: 1rem 0;
+  }
+
+  .navbar ul.active {
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.navbar-list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #60a5fa, #4ade80);
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.navbar-list.active {
+  display: flex;
+}
+
+.navbar-list li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+  .search-input {
+    display: none;
+  }
+
+  .Authenticate {
+    display: flex;
+  }
+
+  /* Hamburger Animation */
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .group {
+    display: none;
+  }
 }
