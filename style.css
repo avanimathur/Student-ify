@@ -218,17 +218,20 @@ html,body{
   .sign-up,.log-in {
     display: flex;
     align-items: center;
+    justify-content: center; 
     font-family: inherit;
     cursor: pointer;
     font-weight: 500;
     font-size: 17px;
-    padding: 0.8em 1.3em 0.8em 0.9em;
+    padding: 0.8em 1.2em;
     color: white;
-    background: #ad5389;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     border: none;
     letter-spacing: 0.05em;
     border-radius: 16px;
+    width: 90px;
+    height: 35px;
+    text-align: center;
   }
   
   
