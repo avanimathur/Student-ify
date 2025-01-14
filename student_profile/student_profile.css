@@ -1,174 +1,96 @@
-/* General Body Styles */
-body {
-    font-family: 'Arial', sans-serif;
+/* General Reset */
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text color */
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
+    margin: 0;
+    padding: 20px;
 }
 
 /* Profile Container */
 #profile-container {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex: 1;
+    width: 90%;
+    max-width: 600px; /* Reduced the size of the container */
+    background: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 20px;
 }
 
 /* Profile Header */
 #profile-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-    border-bottom: 2px solid #444;
-    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#profile-pic img {
-    width: 140px;
-    height: 140px;
+#profile-pic {
+    width: 120px; /* Smaller profile picture */
+    height: 120px;
     border-radius: 50%;
-    border: 4px solid #444;
-    margin-right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-#profile-info h1 {
-    font-size: 38px;
-    color: #e0e0e0;
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
-#profile-info .role {
-    font-size: 20px;
-    color: #b0b0b0;
-    margin-bottom: 15px;
+h1 {
+    font-size: 22px;
+    color: #1e90ff;
 }
 
-#profile-info .bio {
-    font-size: 16px;
-    color: #b0b0b0;
+.student-info {
+    font-size: 12px;
+    color: #d0d0d0;
 }
 
-/* Contact Section */
-#contact-section {
-    background-color: #1f1f1f;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 40px;
-}
-
-#contact-section h2 {
-    font-size: 26px;
-    color: #e0e0e0;
+/* Section Styles */
+#about, #skills, #academic, #projects {
     margin-bottom: 20px;
 }
 
-.contact-item {
-    font-size: 16px;
-    color: #b0b0b0;
-    margin-bottom: 15px;
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1e90ff;
 }
 
-.contact-item strong {
-    color: #fff;
+p, ul {
+    font-size: 12px;
+    color: #d0d0d0;
+    line-height: 1.6;
 }
 
-.contact-item a {
-    color: #76a7ff;
-    text-decoration: none;
+ul {
+    list-style: none;
+    padding-left: 20px;
 }
 
-.contact-item a:hover {
-    text-decoration: underline;
+ul li {
+    margin-bottom: 5px;
+    position: relative;
 }
 
-/* Academic Section */
-#academic-section {
-    background-color: #1f1f1f;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 40px;
+ul li::before {
+    content: "•";
+    color: #1e90ff;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
-#academic-section h2 {
-    font-size: 26px;
-    color: #e0e0e0;
-    margin-bottom: 20px;
-}
-
-#academic-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#academic-section li {
-    font-size: 16px;
-    color: #b0b0b0;
-    margin-bottom: 12px;
-}
-
-/* Achievements Section */
-#achievements-section {
-    background-color: #1f1f1f;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-#achievements-section h2 {
-    font-size: 26px;
-    color: #e0e0e0;
-    margin-bottom: 20px;
-}
-
-#achievements-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#achievements-section li {
-    font-size: 16px;
-    color: #b0b0b0;
-    margin-bottom: 12px;
-}
-
-/* Footer Styles */
+/* Footer */
 #footer {
-    background-color: #1f1f1f;
-    color: #e0e0e0;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    margin-top: 50px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #profile-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    #profile-pic img {
-        margin-bottom: 20px;
-    }
-
-    #profile-info h1 {
-        font-size: 32px;
-    }
-
-    #profile-info .role {
-        font-size: 18px;
-    }
-
-    #contact-section, #academic-section, #achievements-section {
-        padding: 20px;
-    }
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-top: 20px;
 }

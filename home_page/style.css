@@ -31,6 +31,17 @@ body {
   cursor: pointer;
 }
 
+#nav-links a {
+  text-decoration: none; /* Remove the underline */
+  color: #e0e0e0; /* Set the text color to a light color (change this if needed) */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+#nav-links a:hover {
+  color: #1a73e8; /* Change color on hover (you can customize this color) */
+}
+
+
 #buttons {
   display: flex;
   justify-content: space-between;

@@ -1,0 +1,109 @@
+/* General Body Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Calendar Container */
+#calendar-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Calendar Header */
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#month-year {
+    color: #e0e0e0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-button {
+    background-color: #333;
+    border: none;
+    color: #e0e0e0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #444;
+}
+
+/* Calendar Grid */
+#calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-day {
+    color: #1a73e8;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.calendar-day:nth-child(even) {
+    color: #ff9800;
+}
+
+/* Calendar Days */
+.calendar-day-cell {
+    padding: 12px;
+    background-color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calendar-day-cell:hover {
+    background-color: #444;
+}
+
+.calendar-day-cell.empty {
+    background-color: transparent;
+    cursor: default;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #calendar-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #month-year {
+        font-size: 20px;
+    }
+
+    .calendar-day {
+        font-size: 14px;
+    }
+
+    .calendar-day-cell {
+        padding: 8px;
+    }
+}
