@@ -1,0 +1,20 @@
+.logged {
+    height: 600px;
+    padding: 15rem;
+}
+
+.logged p {
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-size: large;
+}
+
+.sign-up,
+.log-in {
+    text-align: center;
+}
+
+.theme-dark .logged {
+    background: linear-gradient(to right, #4caf50, #ffc107);
+}

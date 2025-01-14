@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studentify</title>
+  <title>Profile</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
 
   <!-- Styles -->
 
@@ -19,26 +19,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/css/chat.css">
-  <link rel="stylesheet" href="assets/css/styleDashboard.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../assets/css/chat.css">
+  <link rel="stylesheet" href="../assets/css/profile.css">
+  <link rel="stylesheet" href="../assets/css/styleDashboard.css">
 
   <!-- Couldn't not find tailwind -->
   <!-- <link href="./output.css" rel="stylesheet"> -->
-
 </head>
 
 <body>
 
+  <!--navbar-->
   <header>
     <nav class="navbar">
       <div class="left">
-        <a href="index.html">
-          <img src="assets/images/logo.jpg" alt="Logo" class="logo" />
+        <a href="../index.html">
+          <img src="../assets/images/logo.jpg" alt="Logo" class="logo" />
         </a>
 
         <div class="group">
@@ -49,21 +52,21 @@
               </path>
             </g>
           </svg>
-          <input placeholder="Search..." type="search" class="input" />
+          <input placeholder="Search" type="search" class="input" />
         </div>
       </div>
 
       <ul class="navbar-list">
-        <li><a href="pages/aboutus.html">About Us</a></li>
-        <li><a href="pages/profile.html">STUDENT Profile</a></li>
-        <li><a href="pages/calender.html">CALENDAR</a></li>
-        <li><a href="pages/faq2.html">FAQ</a></li>
-        <li><a href="pages/contributor.html">CONTRIBUTORS</a></li>
-        <li><a href="pages/contactus.html">CONTACT US</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="profile.html">STUDENT Profile</a></li>
+        <li><a href="calender.html">CALENDAR</a></li>
+        <li><a href="faq2.html">FAQ</a></li>
+        <li><a href="contributor.html">CONTRIBUTORS</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
       </ul>
     </nav>
     <div class="right">
-      <a href="pages/services.html">
+      <a href="services.html">
         <button class="button-explore">
           <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -75,10 +78,11 @@
 
       <div class="Authenticate">
         <button class="sign-up">
-          <span><a href="pages/sign_up.html" style="color:white;">Sign Up</a></span>
+          <span><a href="../sign_up.html" style="color:white;">Sign Up</a></span>
         </button>
 
-        <button class="log-in"><span><a href="pages/login-pg.html" style="color:white;">Log In</a></span></button>
+        <button class="log-in"><span><a href="../Login-page/login-pg.html" style="color:white;">Log
+              In</a></span></button>
       </div>
       <label class="theme-switch">
         <input type="checkbox" class="theme-switch__checkbox" id="themeToggle" onchange="toggleTheme()">
@@ -105,41 +109,15 @@
     </div>
   </header>
 
-  <div class="content">
-    <br>
-    <img src="assets/images/logo.jpg" alt="" class="logo-main">
-    <div id="content">
-      <br>
-      <p id="content">Dear Student,</p>
-      <br>
-      <p>College is an exciting chapter filled with opportunities for growth, learning, and self-discovery. As you
-        navigate this journey, I encourage you to embrace every experience with an open mind and a courageous spirit.
-      </p>
-      <br>
-      <p>Amidst the challenges of coursework, exams, and deadlines, remember to prioritize your well-being. Take breaks
-        when needed, seek support from friends and mentors, and cultivate healthy habits that nourish your mind, body,
-        and soul.</p>
-      <br>
-      <p>It's natural to encounter obstacles along the way, but don't let setbacks deter you from pursuing your dreams.
-        Use them as opportunities to learn, adapt, and grow stronger. Your resilience and determination will propel you
-        forward, even in the face of adversity.</p>
-      <br>
-      <p>College is not just about academics; it's also about exploration and discovery. Take advantage of
-        extracurricular activities, internships, and study abroad programs to broaden your horizons and discover new
-        passions.</p>
-      <br>
-      <p>But amidst all the excitement, remember to stay true to yourself. Define your own path and pursue what truly
-        inspires you. Your college experience is a journey of self-discovery, so don't be afraid to explore different
-        paths and embrace your unique identity.</p>
-      <br>
-      <p>Above all, cherish the friendships and memories you create along the way. College is a time to forge lifelong
-        connections and create unforgettable moments that will shape your future.</p>
-      <br>
-      <p>As you embark on this adventure, know that you have the potential to achieve greatness. Believe in yourself,
-        stay focused on your goals, and never underestimate the power of your dreams.</p>
-    </div>
 
+  <!--navbar ends here-->
+  <div class="logged">
+    <p> Please Log-In / Register to continue ! </p>
     <br>
+    <div class="Authenticate">
+      <button class="sign-up">Sign-Up</button>
+      <button class="log-in">Log-In</button>
+    </div>
   </div>
 
   <footer>
@@ -149,10 +127,12 @@
       <div class="footer-section about"
         style="flex: 2; min-width: 300px; display: flex; align-items:flex-start; margin: 10px; transition: transform 0.3s ease-in-out;"
         onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="assets/images/logo.jpg" alt="Studentify" style="width: 100px; margin-right: 20px;">
+
+        <img src="../assets/images/logo.jpg" alt="Studentify" style="width: 100px; margin-right: 20px;">
         <p style="margin: 0; color: black;">Welcome to STUDENTIFY, your go-to platform for unlocking academic potential
           and broadening horizons. We empower students with tailored resources, expert-led courses, and a dynamic
           learning environment to foster growth, curiosity, and critical thinking for success.</p>
+
       </div>
 
       <div class="footer-section services" style="flex: 1; min-width: 150px; margin: 10px;">
@@ -171,7 +151,7 @@
           <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;"
               onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'"
               onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Investor Relations</a></li>
-          <li><a href="pages/contactus.html" style="color: black; text-decoration: none; transition: all 0.3s ease;"
+          <li><a href="../contactus.html" style="color: black; text-decoration: none; transition: all 0.3s ease;"
               onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'"
               onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Contact Us</a></li>
         </ul>
@@ -182,14 +162,13 @@
         <h2 style="font-size: 18px; margin-bottom: 10px; transition: color 0.3s ease;"
           onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">Learn More</h2>
         <ul style="list-style: none; padding: 0;">
-          <li><a href="pages/privacy.html" style="color: black; text-decoration: none; transition: all 0.3s ease;"
+          <li><a href="../privacy.html" style="color: black; text-decoration: none; transition: all 0.3s ease;"
               onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'"
               onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Privacy Policy</a></li>
           <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;"
               onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'"
               onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Security</a></li>
-          <li><a href="pages/termsofservice.html"
-              style="color: black; text-decoration: none; transition: all 0.3s ease;"
+          <li><a href="../termsofservice.html" style="color: black; text-decoration: none; transition: all 0.3s ease;"
               onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'"
               onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Terms of Service</a></li>
         </ul>
@@ -227,7 +206,6 @@
       <p style="margin: 0; color: black; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'"
         onmouseout="this.style.color='black'">© 2024 Studentify. All rights reserved.</p>
     </div>
-    </div>
 
     <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
 
@@ -255,13 +233,15 @@
   </div>
 
   <!-- Script files here -->
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/scriptDashboard.js"></script>
-  <script src="assets/js/chat.js" defer></script>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/profile.js"></script>
+  <script src="../assets/js/chat.js"></script>
+  <script src="../assets/js/scriptDashboard.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>

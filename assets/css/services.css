@@ -1,0 +1,246 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px;
+    height: 150px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    user-select: none;
+    scroll-snap-align: start;
+    list-style: none;
+    background: #fff;
+    display: flex;
+    width: 98%;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.dark-theme .chatbox .chat.incoming {
+    background-color: #555;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.card:hover,
+.card:focus {
+    transform: translateY(-20px);
+}
+
+.card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+    text-decoration: underline;
+}
+
+.card h2:hover {
+    transform: scale(1.1);
+}
+
+h3:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.cardd-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: #222;
+    color: #eee;
+}
+
+.dark-theme .card {
+    background-color: #333;
+    box-shadow: -1px 0px 5px 3px #ccccccdb;
+}
+
+/* .dark-theme .card h3,
+.dark-theme .card h2 {
+    color: #ffffff00;
+} */
+
+.dark-theme .search-bar input {
+    background-color: #555;
+    color: #eee;
+}
+
+.dark-theme .search-bar button {
+    background-color: #666;
+    color: #eee;
+}
+
+.dark-theme .navbar a {
+    color: #eee;
+}
+
+.dark-theme .cta-button,
+.dark-theme .Authenticate button {
+    background-color: #555;
+    color: #eee;
+}
+
+.dark-theme .footer {
+    background-color: #222;
+    color: #ddd;
+}
+
+.dark-theme .footer .icons a {
+    color: #ddd;
+}
+
+.dark-theme .chatbot-toggler {
+    background-color: #555;
+    color: #eee;
+}
+
+.dark-theme .chatbot {
+    background-color: #444;
+    color: #eee;
+}
+
+.dark-theme .chatbox .chat.incoming {
+    background-color: #555;
+}
+
+.theme-toggle {
+    border-radius: 50%;
+    color: black;
+    background-color: yellow;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-dark .card-container {
+    background: rgba(33 33 33 /1);
+}
+
+body {
+    background: #ebf6f5;
+}
+
+.card-img-top {
+    width: 285px;
+    height: 200px;
+}
+
+h5 {
+    color: blue;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+
+
+}
+
+.btn {
+    color: black;
+}
+
+.card {
+    width: 18rem;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 2px 4px 1px rgba(0, 0, 0, .18);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    height: 1089px;
+    margin-top: 12px;
+    background: #ebf6f5;
+    padding: 20px;
+}
+
+.theme-dark .card-container {
+    background: rgba(33 33 33 /1);
+}
+
+.btn-primary {
+    background: #5cbdb9;
+    border-color: aquamarine;
+}
+
+.theme-dark .btn-primary {
+    background: #4caf50;
+    color: #fff;
+}
+
+.theme-dark .btn-primary:hover {
+    background: #ffc107;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #fbe3e8;
+    color: black;
+
+}
+
+.theme-dark #scrollToTopBtn {
+    background-color: #ffc107;
+}
+
+.theme-dark #scrollToTopBtn:hover {
+    background-color: #4caf50;
+}
+
+header {
+    position: -webkit-sticky;
+    /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Adjust as needed */
+
+}
+
+.content {
+    height: 2000px;
+    /* Example content height to test scrolling */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
