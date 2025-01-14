@@ -1,0 +1,174 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Profile Container */
+#profile-container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+/* Profile Header */
+#profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 20px;
+}
+
+#profile-pic img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #444;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#profile-info h1 {
+    font-size: 38px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+#profile-info .role {
+    font-size: 20px;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+#profile-info .bio {
+    font-size: 16px;
+    color: #b0b0b0;
+}
+
+/* Contact Section */
+#contact-section {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+#contact-section h2 {
+    font-size: 26px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+.contact-item strong {
+    color: #fff;
+}
+
+.contact-item a {
+    color: #76a7ff;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Academic Section */
+#academic-section {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+#academic-section h2 {
+    font-size: 26px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+#academic-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#academic-section li {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 12px;
+}
+
+/* Achievements Section */
+#achievements-section {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#achievements-section h2 {
+    font-size: 26px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+#achievements-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#achievements-section li {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 12px;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #profile-pic img {
+        margin-bottom: 20px;
+    }
+
+    #profile-info h1 {
+        font-size: 32px;
+    }
+
+    #profile-info .role {
+        font-size: 18px;
+    }
+
+    #contact-section, #academic-section, #achievements-section {
+        padding: 20px;
+    }
+}
