@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./img/New Background.jpeg');
+    /* Added background image */
+    background-size: cover;
+    /* Ensures the image covers the entire body */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Ensures the image doesn’t repeat */
+    background-attachment: fixed;
+    /* Keeps the image fixed during scrolling */
+    color: #333;
+}
+
+/* Style for the container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading Styles */
+.container h1,
+.container h3 {
+    color: #333;
+    font-family: 'Georgia', serif;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Style for smaller subheadings */
+.container h1 {
+    font-size: 1.8em;
+    color: #1a73e8;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 5px;
+}
+
+.container h3 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #444;
+}
+
+/* Paragraph Styles */
+.container p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* List Styles */
+.container ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+/* Link Style */
+.container a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+.container section {
+    margin-bottom: 30px;
+}
+
+/* Hover effect on sections */
+.container section:hover {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Button Styling (if needed in future) */
+button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #155ab7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .container h1,
+    .container h3 {
+        font-size: 1.3em;
+    }
+
+    .container p {
+        font-size: 0.95em;
+    }
+
+    .container ul {
+        margin-left: 20px;
+    }
+}

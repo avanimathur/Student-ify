@@ -1,0 +1,96 @@
+.content {
+    background-image: url('../images/background.jpeg');
+}
+
+.form-box {
+    width: 90%;
+    height: 90vh;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: grey;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.form-box h1 {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.form-box h1::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background: black;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-group {
+    height: 290px;
+}
+
+.input-field {
+    background: lightgrey;
+    margin: 10px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: #999;
+    max-height: 55px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input,
+select {
+    color: #7b7b7b;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+option {
+    background: lightgrey;
+}
+
+form p {
+    text-align: left;
+    color: rgb(8, 8, 140);
+    font-size: 13px;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-field button {
+    margin-left: 10px;
+    flex-basis: 48%;
+    background: rgb(247, 110, 55);
+    cursor: pointer;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    overflow: 0;
+    transition: background 1s;
+}
+
+.btn-field button.disable {
+    background: lightsalmon;
+}
+
+.btn-field button:hover {
+    background: lightcoral;
+}
