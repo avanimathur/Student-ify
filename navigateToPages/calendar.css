@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 .wrapper {
-  margin: auto;
-  width: 450px;
+  /* margin: auto; */
+  height: 70%;
+  width: 60%;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.content {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px){
+  .wrapper {
+    width: 100%;
+  }
 }
 
 /* Dark mode styles */
