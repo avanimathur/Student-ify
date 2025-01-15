@@ -169,7 +169,7 @@ header {
     
 }
 
-.content { height: 2000px; /* Example content height to test scrolling */ 
+.content { height: auto; /* Example content height to test scrolling */ 
   padding: 20px; 
   background-color: #f4f4f4;
  }
@@ -185,6 +185,42 @@ html, body {
 <body >
 
   <header>
+    <div>
+      <ul class="sidebar">
+        <li>
+          <svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </li>
+        <li><a href="./navigateToPages/aboutus.html">About Us</a></li>
+        <li><a href="./navigateToPages/profile.html">STUDENT Profile</a></li>
+        <li><a href="./navigateToPages/contact.html">CALENDAR</a></li>
+        <li><a href="./navigateToPages/faq2.html">FAQ</a></li>
+        <li>
+          <a href="./navigateToPages/services.html">
+            Explore
+            <button class="button-explore">
+              <svg
+                class="svgIcon"
+                viewBox="0 0 512 512"
+                height="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                ></path>
+              </svg>
+            </button>
+          </a>
+        </li>
+        <li>
+          <button class="sign-up">
+            <span><a href="sign_up.html" style="color:white;">Sign Up</a></span>
+          </button>
+        </li>
+        <li>
+          <button class="log-in"><span><a href="Login-page/login-pg.html" style="color:white;">Log In</a></span></button>
+        </li>
+      </ul>
+    </div>
     <nav class="navbar">
       <div class="left">
         <a href="../index.html">
@@ -203,7 +239,7 @@ html, body {
         </div>
       </div>
 
-      <ul class="navbar-list">
+      <ul class="navbar-list hideOnSmallScreen">
         <li><a href="../navigateToPages/aboutus.html">About Us</a></li>
         <li><a href="../navigateToPages/profile.html">STUDENT Profile</a></li>
         <li><a href="../navigateToPages/contact.html">CALENDAR</a></li>
@@ -212,7 +248,7 @@ html, body {
         <li><a href="contactus.html">CONTACT US</a></li>
       </ul>
     </nav>
-    <div class="right">
+    <div class="right hideOnSmallScreen">
       <a href="../navigateToPages/services.html">
         <button class="button-explore">
           <svg
@@ -228,14 +264,14 @@ html, body {
         </button>
       </a>
 
-      <div class="Authenticate">
+      <div class="Authenticate hideOnSmallScreen">
         <button class="sign-up">
           <span><a href="sign_up.html" style="color:white;">Sign Up</a></span>
         </button>
 
         <button class="log-in"><span><a href="Login-page/login-pg.html" style="color:white;">Log In</a></span></button>
       </div>
-      <label class="theme-switch">
+      <label class="theme-switch hideOnSmallScreen">
         <input type="checkbox" class="theme-switch__checkbox"   id="themeToggle" onchange="toggleTheme()">
         <div class="theme-switch__container">
           <div class="theme-switch__clouds"></div>
@@ -255,6 +291,9 @@ html, body {
           </div>
         </div>
       </label>
+    </div>
+    <div class="menu">
+      <svg class="menu-button" onclick=showSidebar() style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
     </div>
   </header>
 

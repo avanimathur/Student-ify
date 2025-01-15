@@ -27,3 +27,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 100);
   });
   
+
+  // Function to show sidebar menu.
+function showSidebar(){
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = 'flex'
+}
+
+  // Function to hide the side menu.
+  function hideSidebar(){
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = 'none'
+  }
