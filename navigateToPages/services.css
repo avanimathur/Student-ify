@@ -1,11 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
     gap: 20px;
     margin: 20px;
-    height: 150px;
+    height: auto;
 }
 
+@media (max-width: 350px){
+    .card-container {
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        width: 280px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 600px){
+    .card-container {
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+        width: 280px;
+        height: 300px;
+    }
+}
 .card {
     background-color: #ffffff;
     border-radius: 15px;
@@ -16,13 +43,18 @@
     list-style: none; 
     background: #fff; 
     display: flex; 
-    width: 98%; 
+    width: 90%; 
     padding-bottom: 15px; 
     align-items: center; 
     justify-content: center; 
     flex-direction: column; 
     position: relative;
+    object-fit: cover;
 }
+.card-img-top {
+    width: 100%;
+    height: 200px;
+  }
 .dark-theme .chatbox .chat.incoming  {
         background-color: #555;
     }
@@ -36,14 +68,21 @@
     margin: 0;
     font-size: 20px;
 } 
-
+    .btn{
+        color:black;
+        padding: 10px;
+    }
+    .btn-primary{
+        background: #5cbdb9;
+        border-color: aquamarine;
+    }
 .card:hover, .card:focus {
-    transform: translateY(-20px); 
+    transform: translateY(-10px); 
 }
 
-.card h2 { 
+.card h5 { 
     font-weight: 500; 
-    font-size: 1.56rem; 
+    font-size: 1rem; 
     margin: 30px 0 5px; 
     text-decoration: underline;
 } 
@@ -55,17 +94,25 @@ h3:hover{
     text-decoration: underline;
 }
 
-.cardd-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center; 
-    border-radius: 15px; 
-}
+.theme-dark .btn-primary{
+    background: #4caf50;
+    color:#fff;
+  }
+  .theme-dark .btn-primary:hover{
+    background: #ffc107;
+    color:white;
+  }
+  .btn-primary:hover{
+  background: #fbe3e8 ;
+  color:black;
 
+  }
+  .theme-dark  #scrollToTopBtn{
+      background-color:  #ffc107;
+        }
+  .theme-dark #scrollToTopBtn:hover{
+      background-color: #4caf50 ;
+  }
 /* Dark Theme Styles */
 .dark-theme {
     background-color: #222;
