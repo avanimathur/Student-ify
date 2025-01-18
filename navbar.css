@@ -1,0 +1,355 @@
+  .navbar {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+  }
+
+  .nav-container {
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Create a left section for logo, search, and nav links */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 1rem;
+  }
+
+  /* Adjust nav-right to properly align auth buttons and theme switch */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+  }
+
+  /* Logo Styles */
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  .logo {
+    height: 38px;
+    width: auto;
+  }
+
+  /* Search Bar Styles */
+  .search-container {
+    position: relative;
+    margin: 0 1rem;
+    flex: 0 1 250px;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+  }
+
+  .search-input:focus {
+    border-color: #50b7da;
+    box-shadow: 0 0 0 3px rgba(80, 183, 218, 0.1);
+  }
+
+  .search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #718096;
+    cursor: pointer;
+  }
+
+  /* Navigation Links Styles */
+  .nav-links {
+    display: flex;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-links li {
+    position: relative;
+  }
+
+  .nav-links a {
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    padding: 0.5rem 0;
+    display: block;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+
+  .nav-links a:hover {
+    color: #50b7da;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #50b7da;
+    transition: width 0.3s ease;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  /* Dropdown Styles */
+  .nav-links li.has-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    z-index: 1001;
+  }
+
+  .dropdown-menu a {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: #f7fafc;
+  }
+
+  /* Authentication Buttons Styles */
+  .auth-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-left: 1rem;
+  }
+
+  .sign-up-btn,
+  .login-btn {
+    padding: 0.4rem 1rem;
+    border-radius: 18px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .sign-up-btn {
+    background-color: #50b7da;
+    color: white;
+    border: none;
+  }
+
+  .sign-up-btn:hover {
+    background-color: #3ca3c6;
+    transform: translateY(-1px);
+  }
+
+  .login-btn {
+    background-color: transparent;
+    color: #50b7da;
+    border: 2px solid #50b7da;
+  }
+
+  .login-btn:hover {
+    background-color: #50b7da;
+    color: white;
+    transform: translateY(-1px);
+  }
+
+  /* Mobile Toggle Button */
+  .mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #4a5568;
+    cursor: pointer;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .search-container {
+      flex: 0 1 200px;
+    }
+
+    .nav-links {
+      gap: 1rem;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      height: 60px;
+    }
+
+    .nav-left {
+      flex: 1;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+      gap: 0;
+    }
+
+    .nav-links.active li {
+      width: 100%;
+    }
+
+    .nav-links.active a {
+      padding: 1rem;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+      display: block;
+    }
+
+    .nav-links.active li:last-child a {
+      border-bottom: none;
+    }
+
+    .auth-buttons {
+      display: none;
+    }
+
+    .auth-buttons.active {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+    }
+
+    .mobile-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* Smooth transition for icon */
+    .mobile-toggle i {
+      transition: transform 0.3s ease;
+    }
+
+    .mobile-toggle i.fa-times {
+      transform: rotate(180deg);
+    }
+
+    .search-container {
+      flex: 0 1 160px;
+    }
+
+    .auth-buttons.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 8px 8px;
+      z-index: 1000;
+    }
+
+    .auth-buttons.active .sign-up-btn,
+    .auth-buttons.active .login-btn {
+      width: 100%;
+      margin: 0.3rem 0;
+      text-align: center;
+    }
+
+    .mobile-toggle {
+      margin-left: 1rem;
+    }
+
+    .nav-links.active {
+      top: 60px;
+      padding: 0.8rem;
+    }
+
+    .nav-links.active a {
+      padding: 0.8rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .nav-links.active li:last-child a {
+      border-bottom: none;
+    }
+
+    .nav-links {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .nav-links.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .auth-buttons {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .auth-buttons.active {
+      display: flex;
+      opacity: 1;
+    }
+  }
+
+  
