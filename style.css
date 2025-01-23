@@ -1090,3 +1090,21 @@ li a,a:visited{
 .social-icons li {
   display: inline-block;
 }
+/* code to align Go to Course buttons */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body .btn {
+  align-self: center;
+  margin-top: auto;
+}

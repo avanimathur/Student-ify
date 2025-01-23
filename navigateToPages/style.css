@@ -521,16 +521,16 @@ html,body{
     border-style: groove;
     display: block;
     opacity: 0; 
+    cursor: pointer;
     transition: opacity 1s ease; 
 }
 
 .Hi.loaded {
     opacity: 1; 
 }
-
-.Hi:hover{
-    opacity: 0.5;
-    transform: scale(1.15);
+.Hi:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 .message{
     text-align: center;

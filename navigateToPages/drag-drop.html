@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Chatbot/chat.css">
+    <script src="./navigateToPages/scriptDashboard.js"></script>
+    <script src="./Chatbot/chat.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="drag-drop.css">
+    <style>
+
+/* Scroll to Top Button */
+  #scrollToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 85px;
+      right: 40px;
+      height: 50px;
+      width: 50px;
+      background-color: rgb(80, 183, 218);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 15px;
+  }
+  .theme-dark  #scrollToTopBtn{
+    background-color:  #ffc107;
+  }
+  .theme-dark #scrollToTopBtn:hover{
+    background-color: #4caf50 ;
+  }
+
+  #scrollToTopBtn:hover {
+      background-color: rgb(80, 183, 218);
+
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+          <ul class="sidebar">
+            <li>
+              <svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </li>
+            <li><a href="../navigateToPages/aboutus.html">About Us</a></li>
+            <li><a href="../navigateToPages/profile.html">STUDENT Profile</a></li>
+            <li><a href="./index.html">QNA</a></li>
+            <li><a href="./drag-drop.html">TASK MANAGER</a></li>
+            <li><a href="../navigateToPages/contact.html">CALENDAR</a></li>
+            <li><a href="../navigateToPages/faq2.html">FAQ</a></li>
+            <li><a href="./Contributors/contributor.html">CONTRIBUTORS</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li>
+              <a href="../navigateToPages/services.html">
+                Explore
+                <button class="button-explore">
+                  <svg
+                    class="svgIcon"
+                    viewBox="0 0 512 512"
+                    height="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li>
+              <button class="sign-up">
+                <span><a href="sign_up.html" style="color:white;">Sign Up</a></span>
+              </button>
+            </li>
+            <li>
+              <button class="log-in"><span><a href="Login-page/login-pg.html" style="color:white;">Log In</a></span></button>
+            </li>
+          </ul>
+        </div>
+          <nav class="navbar">
+            <div class="left">
+              <a href="../index.html">
+                <img src="logo.jpg" alt="Logo" class="logo" />
+              </a>
+    
+              <div class="group">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <g>
+                    <path
+                      d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                    ></path>
+                  </g>
+                </svg>
+                <input placeholder="Search" type="search" class="input" />
+              </div>
+            </div>
+    
+  
+            <ul class="navbar-list">
+              <li><a href="navigateToPages\aboutus.html">About Us</a></li>
+              <li><a href="navigateToPages\profile.html">STUDENT Profile</a></li>
+              <li><a href="navigateToPages\contact.html">CALENDAR</a></li>
+              <li><a href="navigateToPages\faq2.html">FAQ</a></li>
+              <li><a href="Contributors\contributor.html">CONTRIBUTORS</a></li>
+  
+            </ul>
+          </nav>
+          <div class="right hideOnSmallScreen">
+            <a href="../navigateToPages/services.html">
+              <button class="button-explore">
+                <svg
+                  class="svgIcon"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+    
+            <div class="Authenticate hideOnSmallScreen">
+              <button class="sign-up">
+                <span><a href="sign_up.html" style="color:white;">Sign Up</a></span>
+              </button>
+    
+              <button class="log-in"><span><a href="Login-page/login-pg.html" style="color:white;">Log In</a></span></button>
+            </div>
+            <label class="theme-switch hideOnSmallScreen">
+              <input type="checkbox" class="theme-switch__checkbox">
+              <div class="theme-switch__container">
+                <div class="theme-switch__clouds"></div>
+                <div class="theme-switch__stars-container">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="theme-switch__circle-container">
+                  <div class="theme-switch__sun-moon-container">
+                    <div class="theme-switch__moon">
+                      <div class="theme-switch__spot"></div>
+                      <div class="theme-switch__spot"></div>
+                      <div class="theme-switch__spot"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+          <div class="menu">
+            <svg class="menu-button" onclick=showSidebar() style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </div>
+        </header>
+
+
+    <button class="create-task-btn text-white" style="top: 120px;"  onclick="openModal()">+ Create Task</button>
+
+    <div class="modal" id="taskModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 style="margin-bottom: 20px;">Create New Task</h2>
+            <form id="taskForm">
+                <div class="form-group">
+                    <label for="taskTitle">Task Title</label>
+                    <input type="text" id="taskTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="taskDescription">Description</label>
+                    <textarea id="taskDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="taskPriority">Priority</label>
+                    <select id="taskPriority" required>
+                        <option value="high-priority">High</option>
+                        <option value="medium-priority">Medium</option>
+                        <option value="low-priority">Low</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Create Task</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="kanban-board">
+        <div class="column" id="todo">
+            <h2>To Do</h2>
+        </div>
+        <div class="column" id="inProgress">
+            <h2>Currently Learning</h2>
+        </div>
+        <div class="column" id="done">
+            <h2>Mastered</h2>
+        </div>
+        <div class="column" id="backlog">
+            <h2>Backlog</h2>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('taskModal');
+        const taskForm = document.getElementById('taskForm');
+        const todoColumn = document.getElementById('todo');
+
+        function openModal() {
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+            taskForm.reset();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Form submission handler
+        taskForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const title = document.getElementById('taskTitle').value;
+            const description = document.getElementById('taskDescription').value;
+            const priority = document.getElementById('taskPriority').value;
+
+            const taskCard = createTaskCard(title, description, priority);
+            todoColumn.appendChild(taskCard);
+            
+            closeModal();
+        });
+
+        // Create task card
+        function createTaskCard(title, description, priority) {
+            const card = document.createElement('div');
+            card.className = `task-card ${priority}`;
+            card.draggable = true;
+            
+            card.innerHTML = `
+                <h3>${title}</h3>
+                <p>${description}</p>
+            `;
+
+            // Add complete button only if in Done column
+            if (card.parentElement && card.parentElement.id === 'done') {
+                addCompleteButton(card);
+            }
+
+            // Add drag event listeners
+            card.addEventListener('dragstart', handleDragStart);
+            card.addEventListener('dragend', handleDragEnd);
+            
+            return card;
+        }
+
+        function addCompleteButton(card) {
+            if (!card.querySelector('.complete-btn')) {
+                const completeBtn = document.createElement('button');
+                completeBtn.className = 'complete-btn';
+                completeBtn.textContent = 'Complete Task';
+                completeBtn.onclick = function() {
+                    card.style.opacity = '0';
+                    setTimeout(() => card.remove(), 300);
+                };
+                card.appendChild(completeBtn);
+            }
+        }
+
+        // Drag and drop functionality
+        let draggedItem = null;
+
+        function handleDragStart(e) {
+            draggedItem = this;
+            this.style.opacity = '0.4';
+        }
+
+        function handleDragEnd(e) {
+            this.style.opacity = '1';
+            draggedItem = null;
+            
+            document.querySelectorAll('.column').forEach(column => {
+                column.classList.remove('drag-over');
+            });
+        }
+
+        document.querySelectorAll('.column').forEach(column => {
+            column.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                this.classList.add('drag-over');
+            });
+
+            column.addEventListener('dragleave', function(e) {
+                this.classList.remove('drag-over');
+            });
+
+            column.addEventListener('drop', function(e) {
+                e.preventDefault();
+                if (draggedItem) {
+                    // Remove complete button if moving from Done column
+                    const completeBtn = draggedItem.querySelector('.complete-btn');
+                    if (completeBtn) {
+                        completeBtn.remove();
+                    }
+
+                    this.appendChild(draggedItem);
+
+                    // Add complete button if moving to Done column
+                    if (this.id === 'done') {
+                        addCompleteButton(draggedItem);
+                    }
+                }
+                this.classList.remove('drag-over');
+            });
+        });
+    </script>
+</body>
+</html>
