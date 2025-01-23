@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studentify</title>
+    <title>World History</title>
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../Chatbot/chat.css">
@@ -72,43 +72,6 @@ html, body {
 <body >
 
     <header>
-      <div>
-        <ul class="sidebar">
-          <li>
-            <svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-          </li>
-          <li><a href="./navigateToPages/aboutus.html">About Us</a></li>
-          <li><a href="./navigateToPages/profile.html">STUDENT Profile</a></li>
-          <li><a href="./navigateToPages/contact.html">CALENDAR</a></li>
-          <li><a href="./navigateToPages/faq2.html">FAQ</a></li>
-          <li><a href="./drag-drop.html">TASK MANAGER</a></li>
-          <li>
-            <a href="./navigateToPages/services.html">
-              Explore
-              <button class="button-explore">
-                <svg
-                  class="svgIcon"
-                  viewBox="0 0 512 512"
-                  height="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
-                  ></path>
-                </svg>
-              </button>
-            </a>
-          </li>
-          <li>
-            <button class="sign-up">
-              <span><a href="../sign_up.html" style="color:white;">Sign Up</a></span>
-            </button>
-          </li>
-          <li>
-            <button class="log-in"><span><a href="Login-page/login-pg.html" style="color:white;">Log In</a></span></button>
-          </li>
-        </ul>
-      </div>
         <nav class="navbar">
           <div class="left">
             <a href="../index.html">
@@ -181,35 +144,131 @@ html, body {
           </label>
         </div>
       </header>
-  
-       <!-- watch video sections starts -->
-       <section class="watch-video">
-      
-        <div class="video-details">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/n5fwinuqGAI?si=siuUvqLqySUqghyC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <h3 class="title" style="font-size: 3rem; font-weight: 500;">Principle of Economics (part 04)</h3>
-          <div class="info">
-           <p> <i class="fas fa-calendar"></i><span>22-06-2024</span></p>
-           <p> <i class="fas fa-heart"></i><span>40 likes</span></p>
-          </div>
-          <div class="tutor">
-            <img src="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=612x612&w=0&k=20&c=NtM9Wbs1DBiGaiowsxJY6wNCnLf0POa65rYEwnZymrM=" alt="">
-          <div>
-          <h3>john deo</h3>
-        </div>
-    </div>
-    <form action="" method="post" class="flex">
-       <a href="principleofeconomics.html" class="inline-btn">view playlist</a> 
-       <button type="submit"><i class="far fa-heart"></i><span>like</span></button>
-    </form>
-    <div class="description">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero itaque ab esse animi ducimus totam commodi earum debitis! Numquam velit perferendis accusantium consequatur saepe magni tenetur ducimus doloremque ex sequi!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque asperiores rem, sunt sequi pariatur quae corporis voluptatem corrupti aliquam ducimus, nobis, deleniti nam accusantium adipisci? Consequuntur molestiae porro iure aperiam.</p>
-    </div>
-  </div>
+     
 
-</section>
-       <!-- watch video sections  ends -->
+    
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f4f4f4;
+              }
+              .container {
+                  width: 80%;
+                  margin: auto;
+                  overflow: hidden;
+              }
+              .book-info {
+                  background: #fff;
+                  padding: 20px;
+                  margin: 20px 0;
+                  border-radius: 5px;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                       font-size: 2rem;
+                       color:black;
+              }
+              .table-of-contents{
+                background: #fff;
+                  padding: 20px;
+                  margin: 20px 0;
+                  border-radius: 5px;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                       font-size: 2rem;
+                       color:black;
+              }
+
+            .theme-dark  .book-info  {
+                color:#fff;
+                background: rgb(55 65 81/1);
+            }
+            .theme-dark .table-of-contents{
+                color:#fff;
+                background: rgb(55 65 81/1);
+            }
+              .book-info img {
+                  float: left;
+                  margin-right: 20px;
+                  height:100px;
+                  width:80px;
+              }
+              .book-info h1 {
+                  margin-top: 0;
+              }
+              .book-info .rating {
+                  color: #f39c12;
+              }
+              .formats, .conditions {
+                  margin-top: 20px;
+              }
+              .formats a, .conditions a {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  margin-right: 10px;
+                  background:black;
+                  color: #fff;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  font-size: 2rem;
+                  margin-bottom: 1rem;;
+              }
+              .formats a.pdf {
+                  background: #3498db;
+              }
+              .conditions img {
+                  vertical-align: middle;
+              }
+          </style>
+      </head>
+      <body>
+          <div class="container">
+              <div class="book-info">
+                  <img src="https://th.bing.com/th/id/OIP.pTDc2hLro-tynk-uJcz9WwHaJ8?rs=1&pid=ImgDetMain" alt="World History">
+                  <h1>
+                    World History Since 1500</h1>
+                  <p><a href="#">(22 reviews)</a></p>
+                  <p class="rating">★★★★☆</p>
+                  <p>John Rankin, East Tennessee State University</p>
+                  <p>Constanze Weise, East Tennessee State University
+
+                  </p>
+                  <p>Copyright Year: 2023</p>
+                 
+                  <p>Publisher: <a href="#"> East Tennessee State University</a></p>
+                  <p>Language: English</p>
+              </div>
+              <div class="table-of-contents">
+                  <h2>Table of Contents</h2>
+                  <ul>
+                  <li>Chapter 1: The World in 1500</li>
+                  <li> Chapter 2: Expanding Empires, Europe and the Americas 1500-1700</li>
+                  <li>Chapter 3: Cultural Encounters and Expanding Empires in Asia and Eurasia 1500-1700</li>
+                  <li> Chapter 4: Islamic Empires - Mughals, Ottomans and Safavids 1500-1700</li>
+                  <li> Chapter 5: Age of Reason - The Scientific Revolution, Enlightened Thought and its Impact</li>
+                  <li>Chapter 6: Challenging the Old Order - The Age of Revolutions</li>
+                  <li>Chapter 7: Remaking the World - The Industrial Revolution, Workers and a New Economic Order</li>
+                  <li>Chapter 8: Nation Building and Reform 1700-1900</li>
+                  <li> Chapter 9: Managing Modernity in Asia 1700-1900</li>
+                  <li> Chapter 10: The Second Wave of Imperialism 1700-1900</li>
+                  <li> Chapter 11: World in Crisis, Conflict, and the Struggle for Independence - World War I, the Indian Independence Movement and the Russian Revolution</li>
+                  <li> Chapter 12: Interwar Years and the Rise of Fascism</li>
+                  <li> Chapter 13: World War II</li>
+                  <li> Chapter 14: Cold War and Decolonization of the World from 1950</li>
+                  <li> Chapter 15: The Modern World</li>
+                  </ul>
+              </div>
+              <div class="formats">
+           
+                  <a href="https://dc.etsu.edu/etsu-oer/13/" class="online">PDF</a>
+
+              </div>
+              <div class="conditions">
+                  <h2>Conditions of Use</h2>
+                  <a href="https://socialsci.libretexts.org/Bookshelves/Economics/Principles_of_Economics_(LibreTexts)">Attribution-NonCommercial-ShareAlike CC BY-NC-SA</a>
+              </div>
+          </div>
+    
+
       
        <footer>
       
