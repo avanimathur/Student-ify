@@ -82,8 +82,9 @@ header{
     }
   
     .navbar-list li a{
-        color: white !important; /* Ensure text is readable in dark mode */
+        color: white ; /* Ensure text is readable in dark mode */
     }
+    
   }
   
   
@@ -857,7 +858,7 @@ li a,a:visited{
 
 
 /* Footer Styling */
-.footer {
+footer {
   background: linear-gradient(45deg, #3498db, #2ecc71);
   color: white;
   padding: 2rem 1rem;
@@ -989,7 +990,7 @@ li a,a:visited{
 }
 
 .theme-dark .navbar a {
-    color: #eee;
+    color: #ffc107;
 }
 
 .theme-dark .cta-button, .theme-dark .Authenticate button {
@@ -1001,8 +1002,29 @@ li a,a:visited{
 
 .theme-dark .footer {
     background-color: #222;
-    color: #ddd;
+    color: #ffc107;
 }
+
+.theme-dark .footer .footer-section p {
+    color: #ffc107 !important;
+}
+
+.theme-dark .footer-section ul li a{
+  color:#ffc107;
+}
+
+.theme-dark .social-icons a i{
+  color:#ffc107 ;
+}
+
+.theme-dark .footer .footer-bottom p {
+  color: #ffc107 !important;
+}
+
+.theme-dark .footer .footer-bottom  {
+  border-top: 1px solid #ffc107;
+}
+
 
 .theme-dark .footer .icons a {
     color: #ddd;
@@ -1038,6 +1060,10 @@ li a,a:visited{
     background: black;
 }
 
+.theme-dark footer {
+  background: black;
+}
+
 .theme-dark .content{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1049,7 +1075,7 @@ li a,a:visited{
   color: white;
 }
 .theme-dark .input{
-  color:black;
+  color:#ffc107;
 }
 .theme-dark 
 .button-explore{
@@ -1060,6 +1086,9 @@ li a,a:visited{
   color:white;
 }
 
+.theme-dark .icon{
+  fill:#ffc107;
+}
 .theme-dark .navbar-list li a:hover{
   color:#2ecc71;
 }
