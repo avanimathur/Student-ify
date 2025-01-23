@@ -264,6 +264,7 @@ html,body{
     margin: 0;
     padding: 0;
     font-size: var(--toggle-size);
+    
   }
   
   .theme-switch__container {
