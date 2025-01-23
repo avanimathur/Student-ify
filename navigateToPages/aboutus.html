@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <style>
       /* Scroll to Top Button */
         #scrollToTopBtn {
@@ -81,6 +82,7 @@ html, body {
           <li><a href="../navigateToPages/profile.html">STUDENT Profile</a></li>
           <li><a href="../navigateToPages/contact.html">CALENDAR</a></li>
           <li><a href="../navigateToPages/faq2.html">FAQ</a></li>
+          <li><a href="./drag-drop.html">TASK MANAGER</a></li>
           <li>
             <a href="../navigateToPages/services.html">
               Explore
@@ -130,6 +132,7 @@ html, body {
           <ul class="navbar-list hideOnSmallScreen">
             <li><a href="../navigateToPages/aboutus.html">About Us</a></li>
             <li><a href="../navigateToPages/profile.html">STUDENT Profile</a></li>
+            <li><a href="./QnACommunity/index.html">QNA</a></li>
             <li><a href="../navigateToPages/contact.html">CALENDAR</a></li>
             <li><a href="../navigateToPages/faq2.html">FAQ</a></li>
             <li><a href="./Contributors/contributor.html">CONTRIBUTORS</a></li>
@@ -187,7 +190,7 @@ html, body {
 
 <div class="content" style="background-color: transparent;">
 <br>
-<div class="about backdrop-blur-sm bg-white/80 w-5/6 rounded-2xl mx-auto p-10">
+<div class="about backdrop-blur-sm bg-white/80 w-5/6 rounded-2xl mx-auto p-10" >
     <p >Welcome to STUDENTIFY, your ultimate destination for unlocking your full academic potential and expanding your horizons. At Studentify, we understand the importance of education and the pursuit of knowledge as vital pillars for personal and professional growth. Our mission is to empower students like you to achieve excellence by offering a comprehensive range of resources and courses tailored to your needs.</p>
     <br>
     <p  >With a team of dedicated educators, industry experts, and passionate individuals, we strive to create a dynamic learning environment that fosters curiosity, critical thinking, and creativity. Whether you're looking to enhance your understanding of a specific subject, prepare for standardized tests, or explore new areas of interest, we have you covered.</p>
@@ -204,56 +207,42 @@ html, body {
 </div>
 </div>
 
-<footer>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section" style="max-width: 400px;">
+      <h4>About</h4>
+      <p style="color: rgb(8, 56, 8); font-weight: 500; ">Welcome to STUDENTIFY, your go-to platform for unlocking academic potential and broadening horizons. We empower students with tailored resources, expert-led courses, and a dynamic learning environment to foster growth, curiosity, and critical thinking for success..</p>
+    </div>
+
+    <div class="footer-section" style="margin-left: 0px; margin-right: 0px;">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="navigateToPages\aboutus.html">About us</a></li>
+        <li><a href="navigateToPages\profile.html">Student Profile</a></li>
+        <li><a href="navigateToPages\faq2.html">FAQ</a></li>
+        <li><a href="Contributors\contributor.html">Contributors</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+
+      </ul>
+    </div>
+    <div class="footer-section" style="margin-left: 0;">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p style="color: rgb(8, 56, 8);">&copy; 2024 Studentify. All rights reserved. </p>
+    <p style="margin-top: 8px; color: rgb(8, 56, 8);">Made with love 💖</p>
       
-  <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: white; color: black;">
-    <div class="footer-section about" style="flex: 2; min-width: 300px; display: flex; align-items:flex-start; margin: 10px; transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-
-      <img src="logo.jpg" alt="Studentify" style="width: 100px; margin-right: 20px;">
-      <p style="margin: 0; color: black;">Welcome to STUDENTIFY, your go-to platform for unlocking academic potential and broadening horizons. We empower students with tailored resources, expert-led courses, and a dynamic learning environment to foster growth, curiosity, and critical thinking for success.</p>
-
-    </div>
-
-    <div class="footer-section services" style="flex: 1; min-width: 150px; margin: 10px;">
-      <h2 style="font-size: 18px; margin-bottom: 10px; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">Studentify</h2>
-      <ul style="list-style: none; padding: 0;">
-        <li><a href="../whoweare.html" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Who We Are</a></li>
-        <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Blog</a></li>
-        <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Work With Us</a></li>
-        <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Investor Relations</a></li>
-        <li><a href="../contactus.html" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Contact Us</a></li>
-      </ul>
-    </div>
-
-
-    <div class="footer-section learn-more" style="flex: 1; min-width: 150px; margin: 10px;">
-      <h2 style="font-size: 18px; margin-bottom: 10px; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">Learn More</h2>
-      <ul style="list-style: none; padding: 0;">
-        <li><a href="../privacy.html" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Privacy Policy</a></li>
-        <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Security</a></li>
-        <li><a href="../termsofservice.html" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Terms of Service</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section social-links" style="flex: 1; min-width: 150px; margin: 10px;">
-      <h2 style="font-size: 18px; margin-bottom: 10px; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">Follow Us</h2>
-      <ul class="social-icons" style="list-style: none; padding: 0; display: flex; gap: 10px;">
-        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e4405f'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#3b5998'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#0077b5'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#1da1f2'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#ff0000'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-youtube"></i></a></li>
-      </ul>
-    </div>
   </div>
-
-  <div class="footer-bottom" style="padding: 10px; text-align: center; background-color: white;">
-    <p style="margin: 0; color: black; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">© 2024 Studentify. All rights reserved.</p>
-  </div>
-
-  <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
-
 </footer>
+\
+
 
     <button class="chatbot-toggler">
         <span class="material-symbols-rounded">mode_comment</span>
