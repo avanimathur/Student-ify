@@ -60,21 +60,6 @@ header{
 }
 
 
-
-/*navbar*/
-
-  .navbar-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: white;
-  }
-  
-  .navbar-list li {
-    display: inline-block; 
-    color: white;
-  }
-  
   /* Dark Mode */
   @media (prefers-color-scheme: dark) {
     .header {
@@ -89,15 +74,14 @@ header{
   
   /*-----navbar------*/
       .navbar{
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 40px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
       }
       .navbar-list{
       list-style-type: none;
-      margin: 0;
-      padding: 0;
+      margin: 10px;
+      padding: 10px;
       display: flex;
   }
   
@@ -203,12 +187,13 @@ header{
   
   .left{
     display: flex;
-    gap: 20px;
+    align-items:center;
+    gap:1rem;
   }
   
   .right{
     display: flex;
-    gap: 12px;
+    gap: 1rem;
   }
   
   .group {
@@ -317,7 +302,8 @@ header{
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     border: none;
     letter-spacing: 0.05em;
-    border-radius: 16px;
+    /* border-radius: 16px; */
+    text-decoration: none;
   }
   
   
@@ -329,8 +315,12 @@ header{
   .sign-up:hover,.log-in:hover span {
     transform: translateX(7px);
   }
-
-
+ 
+  .right.hideOnSmallScreen{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
   /*------theme toggler------**/
   .theme-switch {
     --toggle-size: 15px;
