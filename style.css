@@ -196,6 +196,7 @@ header{
   header{
   display: flex;
   flex-direction: space-between;
+  gap: 50px;
   align-items: center;
   padding:0 20px;
   background: linear-gradient(45deg, #3498db, #2ecc71);
@@ -578,7 +579,7 @@ p{
 .navbar-list{
     display: flex;
     list-style: none;
-    gap: 4rem;
+    gap: 1rem;
 }
 li a,a:visited{
     text-decoration: none;

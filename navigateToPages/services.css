@@ -3,14 +3,103 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+
+/* Card Container */
 .card-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
-    margin: 20px;
-    height: auto;
-}
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  /* Individual Course Card */
+  .course-card {
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    border-radius: 20px;
+    backdrop-filter: blur(12px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(12px); /* For Safari */
+    box-shadow: 0 4px 10px rgb(0 0 0 / 85%);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Course Image */
+  .course-card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  /* Course Body */
+  .course-card-body {
+    padding: 30px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Course Title */
+  .course-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  /* Course Description */
+  .course-card-text {
+    font-size: 1rem;
+    color: rgba(106, 102, 102, 0.7);
+    margin-bottom: 40px;
+  }
+
+  .card-container a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Button */
+  .course-btn {
+    background: linear-gradient(45deg, #3498db, #2ecc71);    
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .course-btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 350px){
     .card-container {
@@ -33,62 +122,14 @@
         height: 300px;
     }
 }
-.card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: grab; 
-    user-select: none; 
-    scroll-snap-align: start; 
-    list-style: none; 
-    background: #fff; 
-    display: flex; 
-    width: 90%; 
-    padding-bottom: 15px; 
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column; 
-    position: relative;
-    object-fit: cover;
-}
-.card-img-top {
-    width: 100%;
-    height: 200px;
-  }
-.dark-theme .chatbox .chat.incoming  {
-        background-color: #555;
-    }
-.card-content {
-    padding: 20px;
-    text-align: center;
-    color:black;
-}
 
-.card h3 {
-    margin: 0;
-    font-size: 20px;
-} 
-    .btn{
-        color:black;
-        padding: 10px;
-    }
-    .btn-primary{
-        background: #5cbdb9;
-        border-color: aquamarine;
-    }
-.card:hover, .card:focus {
-    transform: translateY(-10px); 
-}
 
-.card h5 { 
-    font-weight: 500; 
-    font-size: 1rem; 
-    margin: 30px 0 5px; 
-    text-decoration: underline;
-} 
-.card h2:hover{
-    transform: scale(1.1);
-}
+
+
+
+
+
+
 h3:hover{
     transform: scale(1.1);
     text-decoration: underline;
@@ -120,7 +161,7 @@ h3:hover{
 }
 
 .dark-theme .card {
-    background-color: #333;
+    background-color: #000000;
     box-shadow: -1px 0px 5px 3px #ccccccdb;
 }
 /* .dark-theme .card h3,
