@@ -667,7 +667,8 @@ li a,a:visited{
 .sign-up , .log-in{
     background-color: lightgrey;
     border-radius: 20px;
-    padding: 8px;
+    padding: 22px;
+    font-size: smaller;
     border-color: lightyellow;
 }
 
