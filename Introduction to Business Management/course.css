@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    --tw-gradient-from: #4caf50;
+  --tw-gradient-to: #ffc107 ;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-from: #4caf50;
+  --tw-gradient-to: #ffc107 ;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(135deg, #FFC0CB, #87CEFA, #FFFFFF);
+}
+body.theme-dark{
+    background-image: linear-gradient(to right ,var(--tw-gradient-stops)); 
+}
+.heading
+    {
+        font-size: 4rem;
+        font-weight: 800;
+        text-transform: capitalize;
+        margin-top: 2rem;
+        margin-left: 45rem;
+}
+
+
+.playlist .row{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    padding:2rem;
+    background-color: #e9e4e4;
+}
+.theme-dark .playlist .row{
+ background-color: rgb(55 65 81/1);
+ color:white;
+}
+.playlist .row .col{
+    flex: 1 1 40rem;
+}
+
+.playlist .row .col .save-list button{
+    font-size: 2rem;
+    border-radius: .5rem;
+    background-color: whitesmoke;
+    padding: 1.2rem 2.5rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.playlist .row .col .save-list button i{
+   color: black; 
+   margin-right: 1rem;
+}
+
+.playlist .row .col .save-list button span{
+    color: black;
+}
+.playlist .row .col .save-list button:hover{
+   background-color: black;   
+}
+.playlist .row .col .save-list button:hover i{
+    color:white;
+}
+.playlist .row .col .save-list button:hover span{
+    color: white;
+}
+
+.playlist .row .col .thumb{
+    position: relative;
+    height: 30rem;
+}
+
+.playlist .row .col .thumb span{
+    position: absolute;
+    top: 1rem;left: 1rem;
+    border-radius: .5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color:rgba(0,0,0,0.3);
+}
+
+.playlist .row .col .thumb img{
+   width: 100%; 
+   height: 100%;
+   border-radius: .5rem;
+   object-fit: cover;
+}
+
+.playlist .row .col .tutor{
+   display: flex; 
+   align-items: center;
+   gap: 1.7rem;
+}
+.playlist .row .col .tutor img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.playlist .row .col .tutor h3{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: .2rem;
+}
+.playlist .row .col .tutor span{
+    color:black;
+    font-size: 1.5rem;
+}
+
+.playlist .row .col .details{
+    padding-top: 1.5rem;
+}
+.playlist .row .col .details h3{
+    font-size: 3rem;
+    color: green;
+}
+
+.playlist .row .col .details p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: black;
+    font-size: 1.7rem;
+}
+.theme-dark .playlist .row .col .details p{
+    color:white;
+}
+
+.playlist .row .col .details .date{
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+.playlist .row .col .details .date i{
+    color: black;
+    margin-right: 1rem;
+}
+.playlist .row .col .details .date span{
+    color:black
+}
+
+.video-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 6rem;
+    }
+
+
+
+.video-container .box-container .box img{
+    height: 20rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.video-container .box-container .box i{
+   position: absolute;
+   top: 2rem; left: 2rem; right: 2rem;
+   height: 20rem;
+   background-color: rgba(0,0,0,0.3);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 4rem;
+   color: #fff;
+   border-radius: 0.5rem;
+   display: none;
+}
+
+.video-container .box-container .box:hover i{
+   display: flex; 
+}
+
+.video-container .box-container .box h3{
+    font-size: 2rem;
+    color: #000;
+    margin-top: 1rem;
+}
+
+.video-container .box-container .box:hover h3{
+    color:black;
+}
+
+.watch-video .video-details{
+    background-color: white;
+    padding: 2rem;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    min-height: 100vh;
+}
+
+.video-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 6rem;
+}
+
+figure.snip1107 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 320px; /* Increased */
+    max-width: 420px; /* Increased */
+    max-height: 320px; /* Increased */
+    width: 100%;
+    background: #000000;
+    text-align: center;
+}
+
+figure.snip1107 * {
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+figure.snip1107 img {
+    opacity: 1;
+    width: 100%;
+    height: auto; /* Ensure aspect ratio is maintained */
+    transition: all 0.6s;
+}
+
+figure.snip1107 figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 18%;
+    right: 18%;
+    height: 100%;
+}
+
+figure.snip1107 figcaption > div {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 50%;
+}
+
+figure.snip1107 h3,
+figure.snip1107 span {
+    margin: 0;
+    padding: 10px 15px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+figure.snip1107 span {
+    background: #ffffff;
+    color: #4d4d4d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate3d(0%, 100%, 0);
+}
+
+figure.snip1107 h3 {
+    background: #333333;
+    transform: translate3d(0%, 0%, 0);
+}
+
+figure.snip1107 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+
+figure.snip1107.blue {
+    background: #0a212f;
+}
+
+figure.snip1107.blue h3 {
+    background:#4caf50;
+}
+
+figure.snip1107:hover img,
+figure.snip1107.hover img {
+    opacity: 0.35;
+    filter: blur(5px);
+    transform: scale(1.1);
+}
+
+figure.snip1107:hover figcaption span,
+figure.snip1107.hover figcaption span {
+    transform: translate3d(0%, 0%, 0);
+}
+
+figure.snip1107:hover figcaption h3,
+figure.snip1107.hover figcaption h3 {
+    transform: translate3d(0%, -100%, 0);
+}
+
+/* Demo purposes only */
+html {
+    height: 100%;
+}
+
+
+
+.video-container .box-container .bo
+.watch-video .video-details .video{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.watch-video .video-details .title{
+    font-size: 2rem;
+    color: black;
+    padding: 1.5rem 0;
+}
+
+.watch-video .video-details .info{
+   display: flex;
+   gap: 2rem;
+   padding-bottom: 1.5rem;
+   border-bottom: #000;
+
+}
+.watch-video .video-details .info p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.watch-video .video-details .info p i{
+   margin-right: 1rem;
+   color: black;
+}
+.watch-video .video-details .info p  span{
+    color: black;
+}
+.watch-video .video-details .tutor{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.watch-video .video-details .tutor img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.watch-video .video-details .tutor h3{
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 0.2rem;
+}
+
+.watch-video .video-details .tutor span{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.watch-video .video-details .flex{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.watch-video .video-details .flex a{
+    margin-top: 0;
+    font-size: 2rem;
+    text-decoration: underline;
+    color: purple;
+
+}
+
+.watch-video .video-details .flex button{
+    background-color:white;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+.watch-video .video-details .flex button{
+    color: #000;
+    margin-right: 1rem;
+}
+
+.watch-video .video-details .flex button span{
+    color:black;
+}
+
+.watch-video .video-details .flex button:hover{
+    background-color: black;
+}
+
+.watch-video .video-details .flex button:hover i{
+    color: white;
+}
+
+.watch-video .video-details .flex button:hover span{
+    color: white;
+}
+
+.watch-video .video-details .description{ 
+   padding-top: 2rem;
+}
+
+.watch-video .video-details .description p{
+    line-height: 1.5;
+    font-size: 1.7rem;
+   color: black;
+   white-space: pre-line;
+}
+
+.theme-dark .playlist .row .col .tutor h3{
+    color: white;
+}
+.theme-dark .playlist .row .col .details .date span {
+    color:white;
+}
+.theme-dark .playlist .row .col .details .date i {
+    color:white;
+}
+.theme-dark .playlist .row .col .save-list button{
+    background: #ffc107;
+}
+.theme-dark .watch-video .video-details{
+    background: rgb(55 65 81/1);
+}
+
+.theme-dark .watch-video .video-details .tutor h3 {
+    color: white;
+}
+.theme-dark .watch-video .video-details .info p span{
+    color:white;
+}
+.theme-dark .watch-video .video-details .info p {
+    color:white;
+}
+.theme-dark .watch-video .video-details .info p i {
+    color: #fff;
+}
+.theme-dark .watch-video .video-details .info p span {
+    color: #fff;
+}
+.theme-dark .watch-video .video-details .description p{
+    color: white;
+}
+.theme-dark .watch-video .video-details .flex button {
+    background: #ffc107;
+}
