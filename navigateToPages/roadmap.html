@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="notranslate">STUDENTIFY</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="roadmap.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://storage.googleapis.com/swayam2_central/assets/js/swayam_js/jquery.js"></script>
+    <style>
+        #scrollToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 85px;
+            right: 40px;
+            height: 50px;
+            width: 50px;
+            background-color: rgb(80, 183, 218);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: rgb(80, 183, 218);
+        }
+
+        .theme-dark #scrollToTopBtn {
+            background-color: #ffc107;
+        }
+        
+        .theme-dark #scrollToTopBtn:hover {
+            background-color: #4caf50;
+        }
+
+        header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <a href="../index.html">
+                    <img src="../img/logo.jpg" alt="Logo" class="logo">
+                </a>
+                <div class="group">
+                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                        <g>
+                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                        </g>
+                    </svg>
+                    <input placeholder="Search" type="search" class="input">
+                </div>
+            </div>
+
+            <ul class="navbar-list">
+                <li><a href="../navigateToPages/aboutus.html">About Us</a></li>
+                <li><a href="../navigateToPages/profile.html">STUDENT Profile</a></li>
+                <li><a href="../navigateToPages/contact.html">CALENDAR</a></li>
+                <li><a href="../navigateToPages/faq2.html">FAQ</a></li>
+                <li><a href="./Contributors/contributor.html">CONTRIBUTORS</a></li>
+                <li><a href="../navigateToPages/roadmap.html">ROADMAPS</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="right">
+            <a href="../navigateToPages/services.html">
+                <button class="button-explore">
+                    <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+                    </svg>
+                </button>
+            </a>
+            <div class="Authenticate">
+                <button class="sign-up">
+                    <span><a href="../sign_up.html" style="color:white;">Sign Up</a></span>
+                </button>
+                <button class="log-in">
+                    <span><a href="../Login-page/login-pg.html" style="color:white;">Log In</a></span>
+                </button>
+            </div>
+            <label class="theme-switch">
+                <input type="checkbox" class="theme-switch__checkbox" id="themeToggle" onchange="toggleTheme()">
+                <div class="theme-switch__container">
+                    <div class="theme-switch__circle-container">
+                        <div class="theme-switch__sun-moon-container">
+                            <div class="theme-switch__moon">
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-switch__stars-container">
+                        <svg viewBox="0 0 512 512" class="theme-switch__stars">
+                            <path d="M99.3 174.8l7.3 12.6 12.6 7.3-12.6 7.3-7.3 12.6-7.3-12.6-12.6-7.3 12.6-7.3zM248 48l16 27.7 27.7 16-27.7 16-16 27.7-16-27.7-27.7-16 27.7-16zM396.7 174.8l7.3 12.6 12.6 7.3-12.6 7.3-7.3 12.6-7.3-12.6-12.6-7.3 12.6-7.3zM248 376.3l16 27.7 27.7 16-27.7 16-16 27.7-16-27.7-27.7-16 27.7-16z"/>
+                        </svg>
+                    </div>
+                    <div class="theme-switch__clouds"></div>
+                </div>
+            </label>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div id="roadmaps-view" class="min-h-screen">
+            <div class="text-center header-section">
+                <h1>Career Roadmaps</h1>
+                <p>Choose your path and start learning today</p>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search roadmaps..." class="search-input">
+            </div>
+
+            <div id="roadmaps-grid" class="roadmaps-grid"></div>
+        </div>
+
+        <div id="roadmap-detail" class="min-h-screen hidden">
+            <div class="roadmap-header">
+                <h1 id="roadmap-title"></h1>
+                <p id="roadmap-description"></p>
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <span>Overall Progress</span>
+                        <span id="progress-percentage">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sections-container" class="sections-container"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: white; color: black;">
+            <!-- Footer sections remain the same -->
+            <div class="footer-section about" style="flex: 2; min-width: 300px; display: flex; align-items:flex-start; margin: 10px; transition: transform 0.3s ease-in-out;">
+                <img src="logo.jpg" alt="Studentify" style="width: 100px; margin-right: 20px;">
+                <p style="margin: 0; color: black;">Welcome to STUDENTIFY, your go-to platform for unlocking academic potential and broadening horizons. We empower students with tailored resources, expert-led courses, and a dynamic learning environment to foster growth, curiosity, and critical thinking for success.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom" style="padding: 10px; text-align: center; background-color: white;">
+            <p style="margin: 0; color: black; transition: color 0.3s ease;">© 2024 Studentify. All rights reserved.</p>
+        </div>
+
+        <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+    </footer>
+
+    <script src="roadmapdata.js"></script>
+    <script src="roadmap.js"></script>
+    <script>
+        function setTheme(themeName) {
+            document.body.className = themeName;
+            localStorage.setItem('theme', themeName);
+        }
+
+        function toggleTheme() {
+            if (document.body.classList.contains('theme-light')) {
+                setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
+            }
+        }
+
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || 'theme-light';
+            setTheme(savedTheme);
+            const themeToggleCheckbox = document.querySelector('.theme-switch__checkbox');
+            themeToggleCheckbox.checked = savedTheme === 'theme-dark';
+        })();
+
+        // Scroll to top functionality
+        let mybutton = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
