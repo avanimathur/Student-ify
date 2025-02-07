@@ -63,7 +63,7 @@ const courses = [
       title: "Introduction to Business Management", 
       description: "Discover the fundamentals of business management.", 
       img: "./img/bg8.jpg", 
-      link: "#" 
+      link: "../introductiontobusinessmanagement/introductionTobusinessmanagement.html" 
     },
     { 
       title: "Digital Marketing Fundamentals", 
